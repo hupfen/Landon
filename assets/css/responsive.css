@@ -13,9 +13,6 @@
 
 /* Small devices (phones, 480px and smaller) */
 @media (max-width: 480px) {
-	body {
-		text-align: center;
-	}
 
 	hr {
 		width: 150px;
@@ -71,7 +68,9 @@
 
 /* Small devices (tablets, 768px and up) */
 @media (max-width: 768px) {
-	
+		body {
+		text-align: center;
+	}
 }
 
 /* Medium devices (desktops, 992px and up) */
