@@ -2,7 +2,6 @@
 --------------------------------------------------------------------- */
 
 body {
-	background-color: #fff;
 	font-family: 'Lato', sans-serif;
 	font-weight: 300;
 	font-size: 16px;
@@ -10,6 +9,26 @@ body {
 	padding-top: 50px;
 	-webkit-font-smoothing: antialiased;
 	-webkit-overflow-scrolling: touch;
+}
+
+#bg {
+    background: url("../img/header-bg.jpg") no-repeat center top;
+    background-attachment: relative;
+    background-position: center center;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 /* Titles */
@@ -136,6 +155,8 @@ a:after {
 }
 
 .navbar-default .navbar-nav > li > a {
+    padding-left: 12px;
+    padding-right: 12px;
 	color: #714471;
 }
 
@@ -170,8 +191,6 @@ a:after {
 /* Header Wrap */
 
 #headerwrap {
-	background: url("../img/header-bg.jpg") no-repeat center top;
-	background-size: cover;
 	padding-top: 80px;
 }
 
@@ -210,6 +229,7 @@ a:after {
 /* Intro Wrap */
 
 #intro {
+    background: #f5f5f5;
 	padding-top: 80px;
 	padding-bottom: 80px;
 }
