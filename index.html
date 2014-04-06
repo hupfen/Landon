@@ -7,7 +7,7 @@
 		<meta name="description" content="">
 		<meta name="keywords" content="">
 		<meta name="author" content="Zoe Landon">
-		<title>Zoe Landon : Portland Web Developer</title>
+		<title>Zoe Landon : Portland Web Development</title>
 
 		<!-- Bootstrap core CSS -->
 		<link href="assets/css/bootstrap.min.css" rel="stylesheet">
@@ -43,7 +43,7 @@
 
 				<div class="navbar-collapse collapse">
 					<ul class="nav navbar-nav cl-effect-13">
-						<li><a href="#features" class="smoothScroll">Features & Clients</a></li>
+						<li><a href="#features" class="smoothScroll">Features &amp; Clients</a></li>
 						<li><a href="#pricing" class="smoothScroll">Services</a></li>
 						<li><a href="#contact" class="smoothScroll">Contact</a></li>
 					</ul>
@@ -71,8 +71,22 @@
 						<p>Landon's not a mere code generator&mdash;proper design patterns are automatic.</p>
 						<img src="assets/img/arrow-left.png" alt="">
 					</div>
-					<div class="col-lg-8">
-						<img class="img-responsive" src="assets/img/app-bg.png" alt="">
+					<div id="carousel-example-generic" class="carousel slide col-lg-8" data-ride="carousel">
+                          <!-- Wrapper for slides -->
+                          <div class="carousel-inner">
+                            <div class="item active">
+						      <img class="img-responsive" src="assets/img/bg1.png" alt="">
+                            </div>
+                              <div class="item">
+						      <img class="img-responsive" src="assets/img/bg2.png" alt="">
+                            </div>
+                              <div class="item">
+						      <img class="img-responsive" src="assets/img/bg3.png" alt="">
+                            </div>
+                        <div class="item">
+						      <img class="img-responsive" src="assets/img/bg4.png" alt="">
+                            </div>
+                          </div>
 					</div>
 					<div class="col-lg-2 hidden-xs hidden-sm hidden-md">
 						<br>
@@ -172,7 +186,7 @@
 								</div>
 								<div id="collapseTwo" class="accordion-body collapse">
 									<div class="accordion-inner">
-									<p>Landon was made in C#/jQuery/HTML5/T-SQL, but has ports and plugins for all sorts of languages and frameworks:
+									<p>Landon was made in C#/jQuery/HTML5/T-SQL, but has ports and plugins for all sorts of languages and frameworks: </p>
                                         <ul>
                                             <li>AngularJS</li>
                                             <li>Java</li>
@@ -187,7 +201,8 @@
                                             <li>Grunt</li>
                                             <li>Git</li>
                                             <li>Mercurial</li>
-                                        </ul></p>
+                                        </ul>
+                                   
 									</div><!-- /accordion-inner -->
 								</div><!-- /collapse -->
 							</div><!-- /accordion-group -->
@@ -331,10 +346,10 @@
 								<h3>"Would love the opportunity to work with you again."</h3>
 								<h4>Ryan Alexander, <em>Titan Coding</em></h4>
 							</div>
-							<div class="item">
+							<!--<div class="item">
 								<h3>"Bootstack has helped my team build amazing products. Amazing team."</h3>
 								<h4>Jane Doe, <em>A Company</em></h4>
-							</div>
+							</div>-->
 						</div><!-- /carousel-inner -->
 						<br>
 						<br>
@@ -532,7 +547,7 @@
 		<script src="assets/js/smoothscroll.js"></script>
 		<script>
 			$('.carousel').carousel({
-				interval: 3500,
+				interval: 8500,
 				pause: "none"
 			})
 		</script>
