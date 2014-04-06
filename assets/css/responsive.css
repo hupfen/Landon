@@ -35,21 +35,6 @@
 		margin-bottom: 50px;
 	}
 
-	#divider02 {
-		padding-bottom: 80px;
-		min-height: 200px;
-	}
-
-	#divider02 h3,
-	#divider02 button {
-		display: block;
-		margin: 0 auto;
-	}
-
-	#divider02 a[type="button"] {
-		margin-top: 15px;
-	}
-
 	#footerwrap button {
 		margin-top: 15px;
 	}

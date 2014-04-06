@@ -285,19 +285,21 @@ a:after {
 
 #divider02 {
 	background-color: #714471;
-	height: 150px;
-	padding-top: 55px;
+	max-height: 200px;
 }
 
-#divider02 h3 {
-	color: #fff;
-	padding-right: 40px;
+#divider02 a img {
+	opacity: .3;
+    -webkit-transition: opacity 0.2s ease-in;
+	-moz-transition: opacity 0.2s ease-in;
+	-ms-transition: opacity 0.2s ease-in;
+	-o-transition: opacity 0.2s ease-in;
+	transition: opacity 0.2s ease-in;
 }
 
-#divider02 h3,
-#divider02 button {
-	display: inline;
-	vertical-align: middle;
+#divider02 a:hover img,
+#divider02 a:focus img {
+	opacity: 1;
 }
 
 #divider03 {
