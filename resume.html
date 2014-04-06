@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+		<meta name="author" content="Zoe Landon">
+		<title>Zoe Landon : Portland Web Development</title>
+
+		<!-- Bootstrap core CSS -->
+		<link href="assets/css/bootstrap.min.css" rel="stylesheet">
+		<!-- Custom styles for this template -->
+		<link href="assets/css/style.css" rel="stylesheet">
+		<link href="assets/css/responsive.css" rel="stylesheet">
+		<link href="assets/css/font-awesome.min.css" rel="stylesheet">
+		<!-- Web Fonts -->
+		<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>
+		
+		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+			<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+		<script src="assets/js/modernizr.custom.js"></script>
+	</head>
+
+	<body>
+		<!-- Fixed navbar -->
+		<div id="navigation" class="navbar navbar-default navbar-fixed-top hidden-print">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+                    <a class="navbar-brand" href="index.html"><b>ZOE LANDON</b></a>
+				</div>
+
+				<div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav navbar-right">
+						<li><a href="index.html">Home</a></li>
+						<li><a href="https://www.medium.com/@actualhop" target="_blank">Blog</a></li>
+					</ul>
+				</div><!--/nav-collapse -->
+			</div><!-- /container -->
+		</div><!-- /fixed-navbar -->
+        
+		<!-- Features Wrap -->
+		<div id="featureswrap" class="hidden-print">
+			<div class="container">
+				<div class="row">
+					<h2 class="text-center">Resume Builder</h2>
+                    <div class="col-md-6 col-md-offset-3">Build the version of Landon that best suits your needs. Or at least, the version that sounds 
+                    best to the person making the final decision.</div>
+				</div>
+			</div><!-- /container -->
+		</div><!-- /featureswrap -->
+
+        <div class="visible-print">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-7 resume-header">
+                        <h1 class="text-center">Zoe Landon</h1>
+                    </div>
+                    <div class="col-xs-5 text-right resume-contact">
+                        <p><i class="fa fa-map-marker"></i> 2174 NW Davis St #204<br>Portland OR, 97210 <br>
+							<i class="fa fa-phone"></i> (716) 253-1292 <br>
+							<i class="fa fa-envelope"></i> <b>zoe@leporidaemedia.com</b>
+						</p>
+                    </div>
+                </div>
+                <hr class="resume-rule">
+                <div class="row">
+                </div>
+            </div>
+        </div>
+
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="assets/js/jquery.min.js"></script>
+		<!-- Include all compiled plugins (below), or include individual files as needed -->
+		<script src="assets/js/bootstrap.min.js"></script>
+		<script>
+            $(document).ready(function () {
+                $("select").change(function () {
+                    var $this = $(this);
+                    var prevVal = $this.data("prev");
+                    var otherSelects = $("select").not(this);
+                    otherSelects.find("option[value=" + $(this).val() + "]").attr('disabled', true);
+                    if (prevVal) {
+                        otherSelects.find("option[value=" + prevVal + "]").attr('disabled', false);
+                    }
+                    $this.data("prev", $this.val());
+                });
+            });
+		</script>
+	</body>
+</html>
