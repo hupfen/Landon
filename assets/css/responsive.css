@@ -81,10 +81,17 @@
         appearance: none;
         -webkit-transition: none;
         transition: none;
-        margin: 0;
+        margin: 5px;
         padding: 0;
         line-height: 1;
         height: auto;
         text-align: center;
+    }
+    
+    .form-control.long {
+        font-size: 12px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        margin-bottom: 15px;
     }
 }
