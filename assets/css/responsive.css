@@ -66,3 +66,25 @@
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
 }
+
+@media only print {
+    h2, .h2, h3, .h3 {
+        margin-top: 2px;
+        margin-bottom: 2px;
+    }
+    .form-control, select {
+        border: none;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        appearance: none;
+        -webkit-transition: none;
+        transition: none;
+        margin: 0;
+        padding: 0;
+        line-height: 1;
+        height: auto;
+        text-align: center;
+    }
+}

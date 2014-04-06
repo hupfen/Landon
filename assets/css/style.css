@@ -451,3 +451,7 @@ a:after {
     margin: 0;
     width: 100%;
 }
+
+.form-control {
+    margin-bottom: 5px;
+}
