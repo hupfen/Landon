@@ -1,0 +1,1 @@
+require './spec/App-spec.cjsx'

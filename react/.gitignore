@@ -1,33 +1,29 @@
-### SublimeText ###
-*.sublime-workspace
+# Numerous always-ignore extensions
+*.diff
+*.err
+*.orig
+*.log
+*.rej
+*.swo
+*.swp
+*.vi
+*~
+*.sass-cache
 
-### OSX ###
+# OS or Editor folders
 .DS_Store
-.AppleDouble
-.LSOverride
-Icon
-
-# Thumbnails
-._*
-
-# Files that might appear on external disk
-.Spotlight-V100
-.Trashes
-
-### Windows ###
-# Windows image file caches
+.cache
+.project
+.settings
+.tmproj
+.sass-cache
+nbproject
 Thumbs.db
-ehthumbs.db
 
-# Folder config file
-Desktop.ini
-
-# Recycle Bin used on file shares
-$RECYCLE.BIN/
-
-# App specific
-
+# NPM packages folder and bower.
 node_modules/
-.tmp
-dist
-/src/scripts/main.js
+bower_components/
+
+# Project folders
+dist/
+

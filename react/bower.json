@@ -1,0 +1,9 @@
+{
+  "name": "react-scaffold",
+  "version": "0.0.1",
+  "dependencies": {
+    "lodash": "~2.4.1",
+    "react": "~0.10.0",
+    "bootstrap-sass-official": "~3.3.3"
+  }
+}
